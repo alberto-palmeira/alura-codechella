@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--gray);
+    font-family: var(--text-font);
+}
