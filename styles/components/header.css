@@ -1,0 +1,75 @@
+@import '../abstract/_variables.css';
+
+.header {
+    background-color: var(--dark-blue);
+    
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem 1.5rem;
+}
+
+.header__logo {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.header__logo__img {
+    max-height: 4rem;
+    max-width: 14.625rem;
+
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(46deg) brightness(115%) contrast(101%);
+}
+
+.header__menu {
+    background: none;
+    border: none;
+
+    position: relative;
+}
+
+.header__menu::before {
+    content: '';
+    background: url(../../img/icons/menu.svg) center no-repeat;
+    
+    padding: 20px 16px;
+}
+
+.header__nav {
+    background-color: var(--dark-blue);
+    display: none;
+    
+    position: absolute;
+    right: 1.5rem;
+    top: 8rem;
+}
+
+.header__nav--active {
+    display: block;
+}
+
+.header__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    
+    padding: 1rem;
+}
+
+.header__link {
+    border-bottom: 1px solid var(--white);
+    
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+
+    padding-bottom: 0.4em;
+    
+}
+
+.header__link:last-child {
+    border: none;
+    padding-bottom: 0;
+}

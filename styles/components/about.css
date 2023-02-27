@@ -1,0 +1,42 @@
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    padding: 2rem 0;
+}
+
+.about__img {
+    max-width: calc(100vw - 3rem);
+}
+
+.about__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    
+    text-align: center;
+}
+
+.about__title {
+    font-family: var(--text-font);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+}
+
+.about__description {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.about__button::after {
+    background: url(../../img/icons/ticket.svg) center no-repeat;
+
+    content: "";
+
+    padding: 1.25rem 1rem;
+    margin-left: 1rem;
+}

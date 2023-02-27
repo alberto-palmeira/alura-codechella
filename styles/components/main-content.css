@@ -1,0 +1,5 @@
+.main__content {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-beige), var(--gradient-yellow));
+    
+    padding: 0 1.5rem;
+}

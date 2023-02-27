@@ -1,0 +1,14 @@
+.banner {
+    padding: 5.8125rem 0;
+    
+}
+
+.banner--home {
+    background: url(../../img/banner-home/banner-mobile.png) center no-repeat;
+    background-size: cover;
+}
+
+.banner__title {
+    line-height: 2.625rem;
+    text-align: center;
+}

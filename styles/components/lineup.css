@@ -1,0 +1,55 @@
+.lineup {
+    text-align: center;
+}
+
+.lineup__title {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.lineup__day {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 3rem 0;
+}
+
+.lineup__date {
+    background-color: var(--mustard);
+    color: var(--white);
+
+    line-height: 2.625rem;
+
+    padding: 1rem 0;
+}
+
+.lineup__bands {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.lineup__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.lineup__item:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.lineup__item:nth-child(2) {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lineup__item:nth-child(3) {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
