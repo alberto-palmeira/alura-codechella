@@ -1,0 +1,18 @@
+:root {
+    /* colors */
+    --gradient-blue: #BFDAE6;
+    --gradient-beige: #FCF0DD;
+    --gradient-yellow: #FACF9D;
+
+    --dark-blue: #2E7BA2;
+    --light-blue: #C8DEEF;
+
+    --beige: #FBF0DD;
+
+    --yellow: #FACF9D;
+    --mostard: #DF9010;
+
+    /* fonts */
+    --text-font: 'Raleway', sans-serif;
+    --heading-font: 'Calistoga', cursive;
+}
