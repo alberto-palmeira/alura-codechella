@@ -47,9 +47,6 @@
     padding: 0.5rem 0;
 }
 
-.footer__link {
-}
-
 .footer__link:nth-child(1)::before {
     content: "";
 
@@ -78,7 +75,3 @@
 
     padding: 0.25rem 1rem;
 } 
-
-.footer__disclaimer {
-
-}
