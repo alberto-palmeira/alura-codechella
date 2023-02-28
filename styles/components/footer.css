@@ -1,0 +1,114 @@
+.footer {
+    background-color: var(--yellow);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    text-align: center;
+
+    padding: 1.5rem;
+}
+
+.footer__info {
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+        "logo"
+        "text"
+        "links";
+    row-gap: 0.5rem;
+}
+
+.footer__logo {
+    grid-area: logo;
+    
+    max-height: 4rem;
+    max-width: 14.625rem;
+}
+
+.footer__text {
+    grid-area: text;
+}
+
+.footer__text, .footer__disclaimer {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.footer__links {
+    grid-area: links;
+    
+    justify-content: center;
+    display: flex;
+    column-gap: 0.5rem;
+    
+    padding: 0.5rem 0;
+}
+
+.footer__link:nth-child(1)::before {
+    content: "";
+
+    background: url(../../img/icons/whatsapp.svg) center no-repeat;
+
+    padding: 0.25rem 1rem;
+} 
+.footer__link:nth-child(2)::before {
+    content: "";
+
+    background: url(../../img/icons/twitch.svg) center no-repeat;
+
+    padding: 0.25rem 1rem;
+} 
+.footer__link:nth-child(3)::before {
+    content: "";
+
+    background: url(../../img/icons/instagram.svg) center no-repeat;
+
+    padding: 0.25rem 1rem;
+} 
+.footer__link:nth-child(4)::before {
+    content: "";
+
+    background: url(../../img/icons/twitter.svg) center no-repeat;
+
+    padding: 0.25rem 1rem;
+} 
+
+@media screen and (min-width:768px) {
+    .footer__info {
+        grid-template-areas: 
+            "logo logo"
+            "text links";
+        column-gap: 0.5rem;
+        row-gap: 1.75rem;
+    }
+
+    .footer__logo {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 3.75rem 7.5rem;
+    }
+
+    .footer__info {
+        row-gap: 0.5rem;
+    }
+
+    .footer__logo {
+        justify-self: start;
+    }
+
+    .footer__disclaimer {
+        text-align: start;
+        
+        max-width: 32.1875rem;
+    }
+}

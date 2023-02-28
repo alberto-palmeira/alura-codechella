@@ -6,11 +6,17 @@
 
     --dark-blue: #2E7BA2;
     --light-blue: #C8DEEF;
+    --hover-blue: #519EC5;
+
 
     --beige: #FBF0DD;
 
     --yellow: #FACF9D;
-    --mostard: #DF9010;
+    --mustard: #DF9010;
+
+    --gray: #444444;
+    --white: #FFF;
+
 
     /* fonts */
     --text-font: 'Raleway', sans-serif;

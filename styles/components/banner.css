@@ -1,0 +1,44 @@
+.banner {
+    padding: 5.8125rem 0;
+    
+}
+
+.banner--home {
+    background: url(../../img/banner-home/banner-mobile.png) center no-repeat;
+    background-size: cover;
+
+    opacity: 70%;
+}
+
+.banner__title {
+    line-height: 2.625rem;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .banner {
+        padding: 6.8125rem 0;
+    }
+
+    .banner--home {
+        background: url(../../img/banner-home/banner-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .banner__title {
+        font-size: 4rem;
+        line-height: 5.125rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .banner {
+        padding: 7.53125rem 28.0625rem;
+    }
+
+    .banner--home {
+        background: url(../../img/banner-home/banner-desktop.png) center no-repeat;
+        background-size: cover;
+    }
+
+}

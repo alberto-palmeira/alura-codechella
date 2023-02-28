@@ -1,2 +1,10 @@
 @import './abstract/_variables.css';
 @import './abstract/_base.css';
+@import './components/header.css';
+@import './components/banner.css';
+@import './components/button.css';
+@import './components/main-content.css';
+@import './components/about.css';
+@import './components/lineup.css';
+@import './components/footer-img.css';
+@import './components/footer.css';
