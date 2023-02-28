@@ -32,9 +32,12 @@
     </section>
     <main class="main__content">
         <section class="about">
-            <img src="img/about/about-mobile.png" alt="Pessoas na grade de frente para o palco" class="about__img">
+            <img src="img/about/about-mobile.png" alt="Pessoas na grade de frente para o palco" class="about__img" data-about-img>
             <div class="about__container">
-                <h2 class="about__title"> < 11 e 12 de Março > Aluródromo de São Paulo</h2>
+                <div>
+                    <h3 class="about__subtitle"> < 11 e 12 de Março > </h3>
+                    <h2 class="about__title"> Aluródromo de São Paulo</h2>
+                </div>
                 <p class="about__description">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
                 <a href="#" class="about__button button">Comprar ingresso!</a>
             </div>
@@ -42,7 +45,11 @@
         <section class="lineup">
             <h2 class="lineup__title">/Line-Up/</h2>
             <section class="lineup__day">
-                <h3 class="lineup__date">SÁBADO <11/03></11></h3>
+                <div class="lineup__date__container">
+                    <span></span>
+                    <h3 class="lineup__date">SÁBADO <11/03></11></h3>
+                    <span></span>
+                </div>
                 <ul class="lineup__bands">
                     <li class="lineup__item">
                         <p>System of a DOM</p>
@@ -68,7 +75,11 @@
                 </ul>
             </section>
             <section class="lineup__day">
-                <h3 class="lineup__date">DOMINGO <12/03></h3>
+                <div class="lineup__date__container">
+                    <span></span>
+                    <h3 class="lineup__date">DOMINGO <12/03></h3>
+                    <span></span>
+                </div>
                 <ul class="lineup__bands">
                     <li class="lineup__item">
                         <p>Lana Del Ploy</p>
@@ -112,5 +123,6 @@
         <span class="footer__disclaimer">Desenvolvido por Alberto Palmeira. Projeto fictício da Alura sem fins comerciais.</span>
     </footer>
     <script src="js/header__nav.js"></script>
+    <script src="js/about-img.js"></script>
 </body>
 </html>

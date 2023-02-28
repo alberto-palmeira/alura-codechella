@@ -3,4 +3,21 @@
     background-size: cover;
     
     height: 21.125rem;
+
+    opacity: 70%;
+}
+
+@media screen and (min-width:768px) {
+    .footer__img {
+        background: url(../../img/footer/footer-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .footer__img {
+        background: url(../../img/footer/footer-desktop.png) center no-repeat;
+        background-size: cover;
+    }
 }
