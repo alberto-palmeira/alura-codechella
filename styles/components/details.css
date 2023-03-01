@@ -42,10 +42,10 @@
         grid-template-areas: 
             "title title title"
             "floor premium chairs";
-        grid-template-rows: auto 1fr;    
+        grid-template-rows: 1fr 14fr;    
         row-gap: 2rem;
         
-        height: 46vh;
+        height: 50.375rem;
 
         padding-top: 3rem;
         padding-bottom: 3rem;
