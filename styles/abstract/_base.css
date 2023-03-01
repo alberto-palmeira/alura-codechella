@@ -17,3 +17,8 @@ h6 {
     font-family: var(--heading-font);
     font-size: 2rem;
 }
+
+p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}

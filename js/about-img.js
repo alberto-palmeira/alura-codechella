@@ -13,4 +13,3 @@ window.addEventListener('resize', () => {
         aboutImg.setAttribute('src', 'img/about/about-mobile.png');
     }
 })
-

@@ -10,6 +10,13 @@
     opacity: 70%;
 }
 
+.banner--experience {
+    background: url(../../img/banner-experience/banner-mobile.png) center no-repeat;
+    background-size: cover;
+
+    opacity: 70%;
+}
+
 .banner__title {
     line-height: 2.625rem;
     text-align: center;
