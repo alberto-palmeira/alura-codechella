@@ -1,0 +1,81 @@
+.experience {
+    display: grid;
+    grid-template-areas: 
+        "accessibility"
+        "sustentability"
+        "attractions";
+    row-gap: 4rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    text-align: center;
+}
+
+.accessibility {
+    grid-area: accessibility;
+}
+
+.sustentability {
+    grid-area: sustentability;
+}
+
+.attractions {
+    grid-area: attractions;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+        "first"
+        "second";
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.content__img {
+    grid-area: first;
+}
+
+.content__info {
+    grid-area: second;
+}
+
+.content__title {
+    line-height: 2.3125rem;
+}
+
+@media screen and (min-width:1440px) {
+    .experience {
+        row-gap: 8rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .content {
+        align-items: center;
+        column-gap: 3rem;
+        grid-template-areas: 
+        "first second";
+
+        text-align: start;
+    }
+
+    .content__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .sustentability {
+        text-align: end;
+    }
+
+    .sustentability > .content__img {
+        grid-area: second;
+    }
+    
+    .sustentability > .content__info {
+        grid-area: first;
+    }
+}
