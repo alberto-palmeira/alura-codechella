@@ -17,6 +17,11 @@
     --gray: #444444;
     --white: #FFF;
 
+    --chairs: #01A89E;
+    --common-floor: #FE016E;
+    --premium-floor: #0E7DF1;
+    --ramp: #0E7DF1;
+    --upper-chairs: #3F51B5;
 
     /* fonts */
     --text-font: 'Raleway', sans-serif;

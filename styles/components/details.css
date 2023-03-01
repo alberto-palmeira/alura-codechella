@@ -1,0 +1,70 @@
+.details {
+    display: grid;
+    row-gap: 2rem;
+    
+    text-align: center;
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.details__title {
+    font-family: var(--text-font);
+    font-weight: 700;
+}
+
+.content {
+    align-items: start;
+    display: grid;
+    justify-items: center;
+    row-gap: 1.5rem;
+}
+
+.content__image {
+    max-width: calc(100vw - 3rem);
+}
+
+.content__title {
+    font-family: var(--text-font);
+    font-weight: 700;
+}
+
+@media screen and (min-width:768px) {
+    .details__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .details {
+        align-items: start;
+        column-gap: 1.5rem;
+        grid-template-areas: 
+            "title title title"
+            "floor premium chairs";
+        grid-template-rows: auto 1fr;    
+        row-gap: 2rem;
+        
+        height: 46vh;
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }   
+
+    .details__title {
+        grid-area: title;
+    }
+
+    .floor {
+        grid-area: floor;
+    }
+
+    .premium {
+        align-self: end;
+        grid-area: premium;
+    }
+
+    .chairs {
+        grid-area: chairs;
+    }
+}

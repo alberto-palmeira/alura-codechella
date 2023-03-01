@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella | Mapa de Setores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="styles/setores.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="header__logo">
+            <img src="img/Logo.svg" alt="Logo do CodeChella" class="header__logo__img">
+        </a> 
+        <button class="header__menu" data-menu></button>
+        <nav class="header__nav" data-nav>
+            <ul class="header__links">
+                <li class="header__link">
+                    <a href="experiencia.html">A experiência</a>
+                </li>
+                <li class="header__link">
+                    <a href="setores.html">Mapa de Setores </a>
+                </li>
+                <li class="header__link">
+                    <a href="">Informações</a>
+                </li>
+                <li class="header__link">
+                    <a href="">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner banner--sectors">
+        <h1 class="banner__title">Mapa de Setores</h1>
+    </section>
+    <main class="main__content">
+        <section class="map">
+            <img src="img/map/map-mobile.png" alt="Mapa de setores" class="map__image" data-map-img></img>
+            <ul class="labels__list">
+                    <li class="labels__title">Legenda:</li>
+                    <li class="labels__item">Pista Premium</li>
+                    <li class="labels__item">Pista Comum</li>
+                    <li class="labels__item">Cadeiras térreo</li>
+                    <li class="labels__item">Cadeiras superiores</li>
+                    <li class="labels__item">Rampas</li>
+                </ul>
+        </section>
+        <section class="details">
+            <h2 class="details__title">Mais detalhes sobre os setores:</h2>
+            <section class="floor content">
+                <img src="img/details/floor.png" alt="Pessoas numa pista de campo aberto" class="content__image">
+                <h3 class="content__title">Pista</h3>
+                <p class="content__text">Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+            </section>
+            <section class="premium content">
+                <img src="img/details/premium.png" alt="Pessoas próximas ao palco" class="content__image">
+                <h3 class="content__title">Pista Premium</h3>
+                <p class="content__text">Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.</p>
+            </section>
+            <section class="chairs content">
+                <img src="img/details/chairs.png" alt="Cadeiras de arquibancadas" class="content__image">
+                <h3 class="content__title">Cadeiras</h3>
+                <p class="content__text">Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.</p>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <img src="img/Logo.svg" alt="Logo do CodeChella" class="footer__logo">
+            <p class="footer__text">Acesse nossas redes:</p>
+            <div class="footer__links">
+                <a href="#" class="footer__link"></a>
+                <a href="#" class="footer__link"></a>
+                <a href="#" class="footer__link"></a>
+                <a href="#" class="footer__link"></a>
+            </div>
+        </div>
+        <span class="footer__disclaimer">Desenvolvido por Alberto Palmeira. Projeto fictício da Alura sem fins comerciais.</span>
+    </footer>
+    <script src="js/header-nav.js"></script>
+    <script src="js/sectors-imgs.js"></script>
+</body>
+</html>
