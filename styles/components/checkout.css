@@ -1,0 +1,98 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    text-align: center;
+    
+    padding: 4rem 0;
+}
+
+.checkout__title {
+    font-family: var(--text-font);
+    font-weight: 700;
+}
+
+.checkout__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+    background: linear-gradient(var(--gradient-blue), var(--gradient-beige), var(--gradient-yellow));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+
+    padding: 2rem;
+}
+
+.checkout__heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__logo {
+    height: 2rem;
+    width: 7.28125rem;
+}
+
+.checkout__icon::before {
+    content: "";
+
+    background: url(../../img/icons/code.svg) center no-repeat;
+
+    display: inline-block;
+
+    height: 2rem;
+    width: 2rem;
+}
+
+.checkout__qrcode {
+    align-self: center;
+    
+    max-width: 190px;
+}
+
+.checkout__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__name {
+    font-family: var(--text-font);
+    font-weight: 700;
+    line-height: 2.3125rem;
+
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1440px) {
+    .checkout {
+        padding: 4rem 12.75rem;
+    }
+ 
+    .checkout__card {
+        display: grid;
+        column-gap: 3rem;
+        grid-template-areas: 
+            "heading heading"
+            "qrcode info";
+        grid-template-columns: auto 1fr;
+        justify-items: flex-start;
+
+        text-align: start;
+    }
+
+    .checkout__heading {
+        grid-area: heading;
+        justify-self: stretch;
+    }
+
+    .checkout__qrcode {
+        grid-area: qrcode;
+    }
+
+    .checkout__info {
+        grid-area: info;
+    }
+    
+}
