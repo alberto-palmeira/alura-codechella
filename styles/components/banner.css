@@ -30,6 +30,11 @@
     background-size: cover;
 }
 
+.banner--qrcode {
+    background: url(../../img/banner-form/banner-form-mobile.png) center no-repeat;
+    background-size: cover;
+}
+
 .banner__title {
     line-height: 2.625rem;
     text-align: center;
@@ -56,6 +61,11 @@
     }
 
     .banner--ticket {
+        background: url(../../img/banner-form/banner-form-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .banner--qrcode {
         background: url(../../img/banner-ticket/banner-ticket-tablet.png) center no-repeat;
         background-size: cover;
     }
@@ -73,18 +83,27 @@
 
     .banner--home {
         background: url(../../img/banner-home/banner-desktop.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner--sectors {
         background: url(../../img/banner-sectors/banner-sectors-desktop.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner--info {
         background: url(../../img/banner-info/banner-info-desktop.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner--ticket {
+        background: url(../../img/banner-form/banner-form-desktop.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .banner--qrcode {
         background: url(../../img/banner-ticket/banner-ticket-desktop.png) center no-repeat;
+        background-size: cover;
     }
 
 }
