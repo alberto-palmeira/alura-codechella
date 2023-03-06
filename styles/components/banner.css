@@ -39,6 +39,10 @@
         background: url(../../img/banner-sectors/banner-sectors-tablet.png) center no-repeat;
     }
 
+    .banner--info {
+        background: url(../../img/banner-info/banner-info-tablet.png) center no-repeat;
+    }
+
     .banner__title {
         font-size: 4rem;
         line-height: 5.125rem;
@@ -56,6 +60,10 @@
 
     .banner--sectors {
         background: url(../../img/banner-sectors/banner-sectors-desktop.png) center no-repeat;
+    }
+
+    .banner--info {
+        background: url(../../img/banner-info/banner-info-desktop.png) center no-repeat;
     }
 
 }
