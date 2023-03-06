@@ -7,18 +7,27 @@
 
 .banner--home {
     background: url(../../img/banner-home/banner-mobile.png) center no-repeat;
+    background-size: cover;
 }
 
 .banner--experience {
     background: url(../../img/banner-experience/banner-mobile.png) center no-repeat;
+    background-size: cover;
 }
 
 .banner--sectors {
     background: url(../../img/banner-sectors/banner-sectors-mobile.png) center no-repeat;
+    background-size: cover;
 }
 
 .banner--info {
     background: url(../../img/banner-info/banner-info-mobile.png) center no-repeat;
+    background-size: cover;
+}
+
+.banner--ticket {
+    background: url(../../img/banner-ticket/banner-ticket-mobile.png) center no-repeat;
+    background-size: cover;
 }
 
 .banner__title {
@@ -33,14 +42,22 @@
 
     .banner--home {
         background: url(../../img/banner-home/banner-tablet.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner--sectors {
         background: url(../../img/banner-sectors/banner-sectors-tablet.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner--info {
         background: url(../../img/banner-info/banner-info-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .banner--ticket {
+        background: url(../../img/banner-ticket/banner-ticket-tablet.png) center no-repeat;
+        background-size: cover;
     }
 
     .banner__title {
@@ -64,6 +81,10 @@
 
     .banner--info {
         background: url(../../img/banner-info/banner-info-desktop.png) center no-repeat;
+    }
+
+    .banner--ticket {
+        background: url(../../img/banner-ticket/banner-ticket-desktop.png) center no-repeat;
     }
 
 }

@@ -1,0 +1,138 @@
+.form {
+    padding: 2rem 0;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.form__inputs-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.form__label, .form__field {
+    font-family: var(--text-font);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3125rem;
+}
+
+.form__field {
+    margin-bottom: 0.5rem;
+}
+
+.form__input, .form__select {
+    background-color: white;
+    border: none;
+
+    color: var(--gray);
+    font-family: var(--text-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.form__input {
+    padding: 0.5rem 0.625rem;
+}
+
+.form__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background: url(../../img/icons/arrow-down-black.svg) 96% / 1rem no-repeat white;
+    
+    padding: 0.625rem;
+}
+
+.form__submit-label {
+    align-self: center;
+}
+
+.form__submit-label::after {
+    content: "";
+    
+    background: url(../../img/icons/arrow-right.svg) center no-repeat;
+
+    height: 2.5rem;
+    width: 2rem;
+    
+    margin-left: 1rem;
+    padding: 1.25rem 1rem;
+}
+
+.form__submit-button {
+    background-color: inherit;
+    border: none;
+
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    padding: 0;
+}
+
+@media screen and (min-width:768px) {
+    .form {
+        padding: 3rem 0;
+    }
+
+    .form__title {
+        font-size: 3rem;
+        line-height: 3.875rem;
+        text-align: center;
+    }
+    
+    .form__input-smaller {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .form {
+        padding: 3rem 12.65625rem;
+    }
+    
+    .form__inputs {
+        align-items: end;
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-areas: 
+            "name name"
+            "email email"
+            "ticket date";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .form__inputs-container:nth-child(1) {
+        grid-area: name;    
+    }
+    
+    .form__inputs-container:nth-child(2) {
+        grid-area: email;    
+    }
+    
+    .form__inputs-container:nth-child(3) {
+        grid-area: ticket;    
+    }
+    
+    .form__inputs-container:nth-child(4) {
+        grid-area: date;    
+    }
+
+    .form__input-smaller {
+        max-width: 100%;
+    }
+}

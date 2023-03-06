@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="styles/informacoes.css">
+    <link rel="stylesheet" href="styles/ingressos.css">
 </head>
 <body>
     <header class="header">
@@ -34,11 +34,42 @@
             </ul>
         </nav>
     </header>
-    <section class="banner banner--info">
-        <h1 class="banner__title">Informações Gerais</h1>
+    <section class="banner banner--ticket">
+        <h1 class="banner__title">Garanta seu Ingresso</h1>
     </section>
     <main class="main__content ticket">
-        
+        <section class="form">
+            <form action="" class="form__container">
+                <h2 class="form__title">Preencha o formulário a seguir:</h2>
+                <div class="form__inputs">
+                    <div class="form__inputs-container">
+                        <label class="form__label">Nome Completo:</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__inputs-container">
+                        <label class="form__label">Email:</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <fieldset class="form__fieldset  form__inputs-container">
+                        <legend class="form__field">Tipo de Ingresso</legend>
+                        <select class="form__select" name="" id="" >
+                            <option value="nenhum">Tipo de Ingresso</option>
+                            <option value="comum">Pista Comum</option>
+                            <option value="premium">Pista Premium</option>
+                            <option value="cadeiras-terreo">Cadeiras Térreo</option>
+                            <option value="cadeiras-superiores">Cadeiras Superiores</option>
+                        </select>
+                    </fieldset>
+                    <div class="form__inputs-container">
+                        <label  class="form__label">Data de nascimento:</label>
+                        <input type="text" class="form__input form__input-smaller">
+                    </div>
+                </div>
+                <label for="submit" class="form__submit-label button">
+                    <input type="submit" id="submit" class="form__submit-button" value="Avançar!">
+                </label>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__info">
@@ -54,6 +85,5 @@
         <span class="footer__disclaimer">Desenvolvido por Alberto Palmeira. Projeto fictício da Alura sem fins comerciais.</span>
     </footer>
     <script src="js/header-nav.js"></script>
-    <script src="js/experience-imgs.js"></script>
 </body>
 </html>
