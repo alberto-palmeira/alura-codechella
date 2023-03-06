@@ -1,33 +1,29 @@
 .banner {
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+
     padding: 5.8125rem 0;
-    
 }
 
 .banner--home {
     background: url(../../img/banner-home/banner-mobile.png) center no-repeat;
-    background-size: cover;
-
-    opacity: 70%;
 }
 
 .banner--experience {
     background: url(../../img/banner-experience/banner-mobile.png) center no-repeat;
-    background-size: cover;
-
-    opacity: 70%;
 }
 
 .banner--sectors {
     background: url(../../img/banner-sectors/banner-sectors-mobile.png) center no-repeat;
-    background-size: cover;
+}
 
-    opacity: 70%;
+.banner--info {
+    background: url(../../img/banner-info/banner-info-mobile.png) center no-repeat;
 }
 
 .banner__title {
     line-height: 2.625rem;
     text-align: center;
-    opacity: 100%;
 }
 
 @media screen and (min-width:768px) {
@@ -37,14 +33,10 @@
 
     .banner--home {
         background: url(../../img/banner-home/banner-tablet.png) center no-repeat;
-        background-size: cover;
     }
 
     .banner--sectors {
         background: url(../../img/banner-sectors/banner-sectors-tablet.png) center no-repeat;
-        background-size: cover;
-    
-        opacity: 70%;
     }
 
     .banner__title {
@@ -60,14 +52,10 @@
 
     .banner--home {
         background: url(../../img/banner-home/banner-desktop.png) center no-repeat;
-        background-size: cover;
     }
 
     .banner--sectors {
         background: url(../../img/banner-sectors/banner-sectors-desktop.png) center no-repeat;
-        background-size: cover;
-    
-        opacity: 70%;
     }
 
 }
