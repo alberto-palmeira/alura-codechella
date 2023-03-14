@@ -46,6 +46,16 @@
 .questions__answer {
     background-color: var(--light-blue);
 
+    max-height: 0px;
+    padding: 0 1rem;
+
+    overflow: hidden;
+
+    transition: all 800ms ease-in-out;    
+}
+
+.questions__answer--active {
+    max-height: 100vh;
     padding: 1rem;
 }
 
