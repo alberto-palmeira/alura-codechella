@@ -65,6 +65,12 @@
     margin-bottom: 1rem;
 }
 
+.checkout__disclaimer {
+    color: var(--common-floor);
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+
 @media screen and (min-width:1440px) {
     .checkout {
         padding: 4rem 12.75rem;
