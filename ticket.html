@@ -38,32 +38,45 @@
         <h1 class="banner__title">Garanta seu Ingresso</h1>
     </section>
     <main class="main__content ticket">
-        <section class="form">
+        <section class="js-form form">
             <form action="" class="form__container">
                 <h2 class="form__title">Preencha o formulário a seguir:</h2>
                 <div class="form__inputs">
-                    <div class="form__inputs-container">
+                    <fieldset class="form__inputs-container">
                         <label class="form__label">Nome Completo:</label>
-                        <input type="text" class="form__input">
-                    </div>
-                    <div class="form__inputs-container">
+                        <input name="name" type="text" class="js-form__input form__input" minlength="3" maxlength="60" pattern="\b[^\d]+\b" required>
+                        <p class="js-form__error form__error"></p>
+                    </fieldset>
+                    <fieldset class="form__inputs-container">
+                        <label class="form__label">Data de Nascimento:</label>
+                        <input name="birthDate" type="date" class="form__input" required>
+                        <p class="js-form__error form__error"></p>
+                    </fieldset>
+                    <fieldset class="form__inputs-container">
                         <label class="form__label">Email:</label>
-                        <input type="text" class="form__input">
-                    </div>
+                        <input name="email" type="email" class="form__input" minlength="4" required>
+                        <p class="js-form__error form__error"></p>
+                    </fieldset>
                     <fieldset class="form__fieldset  form__inputs-container">
                         <legend class="form__field">Tipo de Ingresso</legend>
-                        <select class="form__select" name="" id="" >
-                            <option value="nenhum">Tipo de Ingresso</option>
+                        <select name="select" class="form__select" required>
+                            <option value="">Tipo de Ingresso</option>
                             <option value="comum">Pista Comum</option>
                             <option value="premium">Pista Premium</option>
                             <option value="cadeiras-terreo">Cadeiras Térreo</option>
                             <option value="cadeiras-superiores">Cadeiras Superiores</option>
                         </select>
+                        <p class="js-form__error form__error"></p>
                     </fieldset>
-                    <div class="form__inputs-container">
-                        <label  class="form__label">Data de nascimento:</label>
-                        <input type="text" class="form__input form__input-smaller">
-                    </div>
+                    <fieldset class="form__inputs-container">
+                        <label class="form__label">Data do show:</label>
+                        <select name="date" class="form__select" required>
+                            <option value="">Escolha uma data:</option>
+                            <option value="11/03">11/03</option>
+                            <option value="12/03">12/03</option>
+                        </select>
+                        <p class="js-form__error form__error"></p>
+                    </fieldset>
                 </div>
                 <label for="submit" class="form__submit-label button">
                     <input type="submit" id="submit" class="form__submit-button" value="Avançar!">
@@ -85,5 +98,7 @@
         <span class="footer__disclaimer">Desenvolvido por Alberto Palmeira. Projeto fictício da Alura sem fins comerciais.</span>
     </footer>
     <script src="js/header-nav.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/form-store.js"></script>
 </body>
 </html>
