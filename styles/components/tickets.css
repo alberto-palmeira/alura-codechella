@@ -70,6 +70,13 @@
     line-height: 0.75rem;
 }
 
+.form__data {
+    color: var(--common-floor);
+    line-height: 1rem;
+    
+    margin-top: 1rem;
+}
+
 .form__submit-label {
     align-self: center;
 }
