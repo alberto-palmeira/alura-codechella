@@ -46,6 +46,14 @@
     padding: 0.5rem 0.625rem;
 }
 
+.form__input--invalid {
+    border: 2px solid var(--common-floor);
+}
+
+.form__input:valid, .form__select:valid {
+    border: 2px solid var(--chairs);
+}
+
 .form__select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -54,6 +62,12 @@
     background: url(../../img/icons/arrow-down-black.svg) 96% / 1rem no-repeat white;
     
     padding: 0.625rem;
+}
+
+.form__error {
+    color: red;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
 }
 
 .form__submit-label {
@@ -111,6 +125,7 @@
         column-gap: 1.5rem;
         grid-template-areas: 
             "name name"
+            "birth birth"
             "email email"
             "ticket date";
         grid-template-columns: 1fr 1fr;
@@ -121,14 +136,18 @@
     }
     
     .form__inputs-container:nth-child(2) {
-        grid-area: email;    
+        grid-area: birth;    
     }
     
     .form__inputs-container:nth-child(3) {
-        grid-area: ticket;    
+        grid-area: email;    
     }
     
     .form__inputs-container:nth-child(4) {
+        grid-area: ticket;    
+    }
+    
+    .form__inputs-container:nth-child(5) {
         grid-area: date;    
     }
 
