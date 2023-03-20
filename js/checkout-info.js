@@ -1,5 +1,3 @@
-import ageValidation from "./form-validation.js";
-
 const ticketInfo = JSON.parse(localStorage.getItem('codechella'));
 const checkoutInfo = document.querySelector('.js-checkout__info');
 
